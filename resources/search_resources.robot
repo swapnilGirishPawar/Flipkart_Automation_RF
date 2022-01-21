@@ -5,7 +5,8 @@ ${Browser}  Chrome
 ${Loginurl}  https://www.flipkart.com/
 ${username_input_box}   xpath://*[@class='_2IX_2- VJZDxU']
 ${password_input_box}   xpath://*[@class='_2IX_2- _3mctLh VJZDxU']
-${LogIn_button}         xpath://*[@class='_2KpZ6l _2HKlqd
+${LogIn_button}         xpath://*[@class='_2KpZ6l _2HKlqd']
+${search_bar_input}     xpath://*[@class ='_3704LK']
 
 *** Keywords ***
 Open My Browser
@@ -29,6 +30,6 @@ Click On Login Button
 Home Screen
     page should contain     Search for products, brands and more
 
-Products
-    [Arguments] ${produts}
-    input text      ${products}
+Search For Product
+    [Arguments] ${products}
+    input text      ${search_bar_input}     ${products}

@@ -1,29 +1,27 @@
 *** Settings ***
 Library     SeleniumLibrary
 Resource    ../resources/login_resources.robot
+Library     DataDriver      ../test_data/testData.xlsx      sheet_name=Sheet1
+
 
 Suite Setup     Open My Browser
 Suite Teardown  Close Browsers
 
 Test Template   Invalid Login
-Test Template   Valid Login
 
 
-*** Test Cases ***                  username                    password
-Valid user with invalid password    pswapnil032@gmail.com       password@12321
-invalid user with valid password    918888402650                swapnil123
-invalid user with inalid password   swapnilpawar@gmail.com      wrongpass12321
+*** Test Cases ***
+Login Test With excel   ${username}     ${password}
 
 *** Keywords ***
 Invalid Login
     [Arguments]     ${username}     ${password}
-    Open My Browser
     Input Username  ${username}
     Input Password  ${password}
     Click On Login Button
     sleep   2
     error message
-    #close browser
+    reload page
 
 
 Valid Login
