@@ -5,6 +5,11 @@ ${Browser}  Chrome
 ${url}  https://www.flipkart.com/
 *** Test Cases ***
 search_product
+    open browser    ${url}  ${Browser}
+    LoginIntoApplication
+    sleep   5
+    close browser
+
 
 *** Keywords ***
 LoginIntoApplication

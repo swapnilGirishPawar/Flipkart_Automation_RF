@@ -28,3 +28,7 @@ Click On Login Button
 
 Home Screen
     page should contain     Search for products, brands and more
+
+Products
+    [Arguments] ${produts}
+    input text      ${products}
