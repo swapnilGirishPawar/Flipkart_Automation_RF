@@ -7,6 +7,7 @@ ${username_input_box}   xpath://*[@class='_2IX_2- VJZDxU']
 ${password_input_box}   xpath://*[@class='_2IX_2- _3mctLh VJZDxU']
 ${LogIn_button}         xpath://*[@class='_2KpZ6l _2HKlqd']
 ${search_bar_input}     xpath://*[@class ='_3704LK']
+${searchButton}         xpath://*[@class='L0Z3Pu']
 
 *** Keywords ***
 Open My Browser
@@ -31,5 +32,12 @@ Home Screen
     page should contain     Search for products, brands and more
 
 Search For Product
-    [Arguments] ${products}
+    [Arguments]     ${products}
     input text      ${search_bar_input}     ${products}
+
+Search Button
+    click element   ${searchButton}
+
+Product Screen
+    [Arguments]     ${products}
+    page should contain     ${products}
