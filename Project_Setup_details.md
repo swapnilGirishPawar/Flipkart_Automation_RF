@@ -1,4 +1,4 @@
-# RobotFramework-FLIPKART
+# How to setup Python & IDE for robot framework Project
 Hey everyone !
 Thanks for visiting my robotframework project.
 some brief about this project is - 1. this is my first python - robot framework project.
@@ -21,3 +21,7 @@ After creating project in Pycharm IDE
 2. Plugins -> Search for "IntelliBot - SeleniumLibrary Patched" -> click on install -> click on restart IDE
 
 This will complete setup for any basic robot framework project.
+
+
+
+---- SwapnilGirishPawar
