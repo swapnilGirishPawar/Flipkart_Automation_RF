@@ -8,9 +8,16 @@ Referances :- Python basics by santhoshkumar sir
               Robotframework from youtube  :- https://www.youtube.com/channel/UC46vj6mN-6kZm5RYWWqebsg
 
 How to setup the project
+this which are needed:
+1. Python :- https://www.python.org/downloads/
+2. Pycharm IDE (Community version):- https://www.jetbrains.com/pycharm/download/#section=windows
+3. Selenium :- to install selenium ; use "pip install selenium" command in command prompt
+4. RobotFramework :- to install "pip install robotframework" command in command prompt
+5. RobotFramework - SeleniumLbrary : - to install "robotframework-seleniumlbrary" command in command prompt
 
-From command prompt you need to install selenium using "pip install selenium" command
-Second is robotframework using "pip install robotframework"
-In this project :- 3 imports are used 1. Selenium, 2. Robotframework, 3. robotframework-SeleniumLibrary
-                   1 Plugin is used - IntelliBot - SeleniumLibrary Patched (this use to intergate python to selenium library files)
-        
+After creating project in Pycharm IDE
+1. settings -> Project -> Python interpreter -> click on "+" synbol to add packages
+                                                Add 3 packages :-  1. Selenium, 2. Robotframework, 3. robotframework-SeleniumLibrary
+2. Plugins -> Search for "IntelliBot - SeleniumLibrary Patched" -> click on install -> click on restart IDE
+
+This will complete setup for any basic robot framework project.
