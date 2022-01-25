@@ -1,14 +1,18 @@
 # How to setup Python & IDE for robot framework Project
 Hey everyone !
 Thanks for visiting my robotframework project.
-some brief about this project is - 1. this is my first python - robot framework project.
-                                   2. Flipkart web automation is done in this project.
-                                   3. test data , Test resources & test casea are sepratly written
-Referances :- Python basics by santhoshkumar sir
-              Robotframework from youtube  :- https://www.youtube.com/channel/UC46vj6mN-6kZm5RYWWqebsg
 
-How to setup the project
-this which are needed:
+some brief about this project is - 
+1. this is my first python - robot framework project.
+2. Flipkart web automation is done in this project.
+3.  test data , Test resources & test casea are sepratly written
+
+Referances :- 
+1. Python basics by santhoshkumar sir
+2. Robotframework from youtube  :- https://www.youtube.com/channel/UC46vj6mN-6kZm5RYWWqebsg
+
+# How to setup the project
+things which are needed:
 1. Python :- https://www.python.org/downloads/
 2. Pycharm IDE (Community version):- https://www.jetbrains.com/pycharm/download/#section=windows
 3. Selenium :- to install selenium ; use "pip install selenium" command in command prompt
