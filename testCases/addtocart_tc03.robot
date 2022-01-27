@@ -12,12 +12,13 @@ ${Browser}  Chrome
 ${url}  https://www.flipkart.com/
 
 *** Test Cases ***      ${products}
-SearchProduct1          I phone 13
+SearchProduct1          Bletooth Headphone
+
 
 *** Keywords ***
 LoginIntoApplication
     input text      xpath://*[@class='_2IX_2- VJZDxU']      pswapnil032@gmail.com
-    input text      xpath://*[@class='_2IX_2- _3mctLh VJZDxU']      swapnil123
+    input text      xpath://*[@class='_2IX_2- _3mctLh VJZDxU']      Charlie@12321
     click button    xpath://*[@class='_2KpZ6l _2HKlqd _3AWRsL']
     sleep           2
 
@@ -28,9 +29,10 @@ Search the product
     LoginIntoApplication
     Search For Product      ${products}
     Search Button
-    Product Screen          ${products} # Assertion
-
-    First product  # this will open new tab
+    #Product Screen          ${products} # Assertion
+    sleep       2
+    click element    xpath://*[contains(text(),'boAt Rockerz 255F Pro+ Bluetooth Headset')]
+    #First product  # this will open new tab
     Add to Cart
     sleep               2
     close all browsers

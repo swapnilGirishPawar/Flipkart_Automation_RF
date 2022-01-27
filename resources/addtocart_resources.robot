@@ -8,8 +8,8 @@ ${password_input_box}   xpath://*[@class='_2IX_2- _3mctLh VJZDxU']
 ${LogIn_button}         xpath://*[@class='_2KpZ6l _2HKlqd']
 ${search_bar_input}     xpath://*[@class ='_3704LK']
 ${searchButton}         xpath://*[@class='L0Z3Pu']
-${firstProductinlist}   xpath://*[@class='_13oc-S']
-${addtocart_button}     xpath://*[@class='_2KpZ6l _2U9uOA _3v1-ww']
+${firstProductinlist}   xpath://*[contains(text(),'APPLE iPhone 13 (Blue, 128 GB)')]
+${addtocart_button}     xpath://*[contains(text(),'ADD TO CART')]
 
 *** Keywords ***
 Open My Browser
