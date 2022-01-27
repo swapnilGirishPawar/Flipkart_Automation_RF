@@ -8,6 +8,7 @@ mul_bowser_handling
     open browser    ${url}      ${Browser}
     maximize browser window
 
+
     click element   id=windowButton
     sleep   2
     switch browser  2

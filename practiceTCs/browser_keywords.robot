@@ -18,3 +18,4 @@ testcase1
     log to console  Back to first URL is = ${location}
     sleep       2
     close browser
+
