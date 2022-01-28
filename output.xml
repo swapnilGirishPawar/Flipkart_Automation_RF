@@ -1,51 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.1 on win32)" generated="20220127 16:51:32.294" rpa="false" schemaversion="2">
-<suite id="s1" name="javascripExecutor" source="C:\Users\user\PycharmProjects\NewAutomation\practiceTCs\javascripExecutor.robot">
-<test id="s1-t1" name="javascriptExecutor">
-<kw name="scrollintoendofpage">
-<kw name="browser">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${url}</arg>
-<arg>${Browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220127 16:51:32.772" level="INFO">Opening browser 'Chrome' to base url 'https://www.countries-ofthe-world.com/flags-of-the-world.html'.</msg>
-<status status="PASS" starttime="20220127 16:51:32.772" endtime="20220127 16:51:39.593"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220127 16:51:39.593" endtime="20220127 16:51:39.722"/>
-</kw>
-<status status="PASS" starttime="20220127 16:51:32.768" endtime="20220127 16:51:39.722"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
+<robot generator="Robot 4.1.3 (Python 3.10.1 on win32)" generated="20220128 12:29:37.112" rpa="false" schemaversion="2">
+<suite id="s1" name="Loops" source="C:\Users\user\PycharmProjects\NewAutomation\practiceTCs\loops.robot">
+<test id="s1-t1" name="Loopwithexitcondition">
+<kw name="Loopwithexitcondition">
+<kw name="Create List" library="BuiltIn">
+<var>@{items}</var>
+<arg>1</arg>
 <arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220127 16:51:41.735" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220127 16:51:39.722" endtime="20220127 16:51:41.735"/>
+<arg>3</arg>
+<arg>4</arg>
+<arg>5</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20220128 12:29:37.493" level="INFO">@{items} = [ 1 | 2 | 3 | 4 | 5 ]</msg>
+<status status="PASS" starttime="20220128 12:29:37.492" endtime="20220128 12:29:37.493"/>
 </kw>
-<kw name="Execute Javascript" library="SeleniumLibrary">
-<arg>window.scrollTo(0,document.body.scrollHeight)</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220127 16:51:41.735" level="INFO">Executing JavaScript:
-window.scrollTo(0,document.body.scrollHeight)
-Without any arguments.</msg>
-<status status="PASS" starttime="20220127 16:51:41.735" endtime="20220127 16:51:41.755"/>
+<for flavor="IN">
+<var>${k}</var>
+<value>@{items}</value>
+<iter>
+<var name="${k}">1</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${k}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220128 12:29:37.493" endtime="20220128 12:29:37.494"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220127 16:51:43.760" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220127 16:51:41.755" endtime="20220127 16:51:43.760"/>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${K}==3</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220128 12:29:37.494" endtime="20220128 12:29:37.494"/>
 </kw>
-<status status="PASS" starttime="20220127 16:51:32.768" endtime="20220127 16:51:43.760"/>
+<status status="PASS" starttime="20220128 12:29:37.493" endtime="20220128 12:29:37.494"/>
+</iter>
+<iter>
+<var name="${k}">2</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${k}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220128 12:29:37.494" endtime="20220128 12:29:37.495"/>
 </kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220127 16:51:43.760" endtime="20220127 16:51:47.359"/>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${K}==3</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220128 12:29:37.495" endtime="20220128 12:29:37.495"/>
 </kw>
-<status status="PASS" starttime="20220127 16:51:32.768" endtime="20220127 16:51:47.359"/>
+<status status="PASS" starttime="20220128 12:29:37.494" endtime="20220128 12:29:37.495"/>
+</iter>
+<iter>
+<var name="${k}">3</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${k}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220128 12:29:37.495" endtime="20220128 12:29:37.496"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${K}==3</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<msg timestamp="20220128 12:29:37.496" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" starttime="20220128 12:29:37.496" endtime="20220128 12:29:37.497"/>
+</kw>
+<status status="PASS" starttime="20220128 12:29:37.495" endtime="20220128 12:29:37.497"/>
+</iter>
+<status status="PASS" starttime="20220128 12:29:37.493" endtime="20220128 12:29:37.497"/>
+</for>
+<status status="PASS" starttime="20220128 12:29:37.492" endtime="20220128 12:29:37.497"/>
+</kw>
+<status status="PASS" starttime="20220128 12:29:37.492" endtime="20220128 12:29:37.498"/>
 </test>
-<status status="PASS" starttime="20220127 16:51:32.322" endtime="20220127 16:51:47.365"/>
+<status status="PASS" starttime="20220128 12:29:37.114" endtime="20220128 12:29:37.500"/>
 </suite>
 <statistics>
 <total>
@@ -54,7 +75,7 @@ Without any arguments.</msg>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="javascripExecutor">javascripExecutor</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Loops">Loops</stat>
 </suite>
 </statistics>
 <errors>
