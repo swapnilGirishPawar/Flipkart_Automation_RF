@@ -4,7 +4,7 @@ Library     SeleniumLibrary
 
 *** Variables ***
 
-${Browser}  Chrome
+${Browser}  chrome
 ${url}     https://demo.guru99.com/test/newtours/
 
 *** Test Cases ***
