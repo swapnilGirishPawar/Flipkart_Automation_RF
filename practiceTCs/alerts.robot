@@ -45,3 +45,4 @@ alertbutton4
     sleep   2
     input text into alert       Hello World !       ACCEPT
     sleep   3
+

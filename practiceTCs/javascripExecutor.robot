@@ -9,7 +9,6 @@ javascriptExecutor
     #scrollintoview
     scrollintoendofpage
     close browser
-
 *** Keywords ***
 browser
     open browser    ${url}      ${Browser}

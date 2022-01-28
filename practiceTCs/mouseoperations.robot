@@ -11,7 +11,6 @@ mouse_actions
 
     #drag_drop
 
-
 *** Keywords ***
 browser_open
     open browser    ${url}     ${Browser}
