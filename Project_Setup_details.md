@@ -12,7 +12,7 @@ things which are needed:
 2. Pycharm IDE (Community version):- https://www.jetbrains.com/pycharm/download/#section=windows
 3. Selenium :- to install selenium ; use "pip install selenium" command in command prompt
 4. RobotFramework :- to install "pip install robotframework" command in command prompt
-5. RobotFramework - SeleniumLbrary : - to install "robotframework-seleniumlbrary" command in command prompt
+5. RobotFramework - SeleniumLbrary : - to install "pip install robotframework-seleniumlbrary" command in command prompt
 
 After creating project in Pycharm IDE
 1. settings -> Project -> Python interpreter -> click on "+" synbol to add packages
